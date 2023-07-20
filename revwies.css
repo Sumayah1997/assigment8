@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    font-family:'Jost';     
+    }
+
+body{
+    font-size:1vw;
+    font-family:'Jost'; 
+}
+.topnav {
+    overflow: hidden;
+    color:#7F5539;
+    background-color: #f6f6f6;
+
+}
+
+  /* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #7F5539;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+  /* Change color on hover */
+.topnav a:hover {
+    background-color: #7F5539;
+    color: white;
+
+}
+/* ----------------------------------------------------------------------- */
+
+   /* page revwise */
+.button1{
+    /* margin-left: 9.8rem; */
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.con1{
+    /* text-align: center; */
+    /* margin-bottom: -40rem; */
+/* float: right; */
+width: 100%;
+height:fit-content;
+justify-self: center;
+min-width: 400px;
+/* margin-top: 7vh; */
+/* padding: 20px;
+margin-top: -55vh; */
+/* position: absolute;
+right: 250px;
+top:165px; */
+}
+.produc66{
+    justify-self: center;
+
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.img2{
+    /* padding-left: 50rem; */
+    margin-top:3vh;
+    }
+
+    .alld{
+        display: flex;
+        gap: 15vh;
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bigw{
+        width: 40vw;
+        display: flex;
+        gap: 4vw;
+        margin-top: 5vh;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    @media only screen and (max-width:700px){
+        .alld{
+            flex-direction: column;
+        }
+        .produc66{
+            width: 70vw;
+            height: auto;
+            justify-self: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.ffooter{
+    width: 100%;
+    height: 60px;
+    background: #7F5539;
+    display: flex;
+    flex-direction:row;
+    flex-shrink: 0;
+    text-align: center;
+    justify-content:space-around;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-family: 'Jost', sans-serif;
+    line-height: normal;
+    position: fixed;
+    bottom:0px;
+    align-items: center;
+    text-decoration: none;
+    }
+    .bigfooter{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }

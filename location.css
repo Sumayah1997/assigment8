@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family:'Jost';     
+    }
+
+body{
+    font-size:1vw;
+    font-family:'Jost'; 
+}
+.topnav {
+    overflow: hidden;
+    color:#7F5539;
+    background-color: #f6f6f6;
+
+}
+
+  /* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #7F5539;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+  /* Change color on hover */
+.topnav a:hover {
+    background-color: #7F5539;
+    color: white;
+
+}
+/* ---------------------------------------------------------------------------------- */
+.parimglink{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    gap:4vw;
+    
+}
+.loc1{
+    width:100%;
+    height: 50vh;
+    min-width: 100px;
+}
+.loc2{
+    width:100% ;
+    height: 50vh;
+    min-width: 100px;
+}
+/* .contentlocation1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+} */
+.plocation1{
+    display: flex;
+    flex-direction:column;
+    font-family:'Jost';
+    font-size: 20px;
+    justify-self: center;
+    margin-top: 10px;
+    font-weight: 700;
+
+}
+.more1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.more{
+    font-family: 'jost';
+    font-size: 13px;
+    color: gray;
+    text-decoration: underline;
+    /* margin-top: -20px;
+    margin-left: 300px; */
+}
+
+@media only screen and (max-width: 700px) {
+    .parimglink{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+    
+}
+/* ------------------------------------------------------------------------------------------ */
+/* footer */
+.ffooter{
+    width: 100%;
+    height: 60px;
+    background: #7F5539;
+    display: flex;
+    flex-direction:row;
+    flex-shrink: 0;
+    text-align: center;
+    justify-content:space-around;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-family: 'Jost', sans-serif;
+    line-height: normal;
+    position: fixed;
+    bottom:0px;
+    align-items: center;
+    text-decoration: none;
+    }
+    .bigfooter{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
