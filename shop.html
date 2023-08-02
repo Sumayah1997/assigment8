@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coffee beans </title>
+  <head>
+    <title>SHOP</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="fristpagewithall.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,8 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400&family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
-</head>
-<body background="coffee-beans-22.png"cover no-repeat;>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body background="coffee-beans-22.png"cover no-repeat;>
     <div class="topnav">
         <img class="Ls" src="logo1.svg" alt="Coffee logo" style="float:left;width:65px;height:66px;margin:10px;"onclick="FetchPage('home')">
         <h4>
@@ -24,25 +28,56 @@
         </div>  
         <a class="Ls" href="#" style="float:right;"><img src="add-cart-1.png" alt="Coffee logo" style="position: absolute;right:20px;top:40px;width:35px;height:35px;">
         <a class="Ls" href="seach.html" style="float:right; margin:-30px;"><img src="search-1.png"style="position: absolute;right:65px;top:40px;width:35px;height:35px;"onclick="FetchPage('search')"></a>
-            <!-- content finally -->
-            <!-- <br> -->
-            <div class="titleimg">
-            <div class="bigimg">
-                <img src="coffee22.jpg" white="100px" height="450px" min-width="100%">
-            </div>
-        <div class="title">
-            <div class="par">
-                <per class="t1"> Coffee Beans with 
-                        guaranteed Source!  
-                </per>
-                <br>
-                <p class="t2"> Discover your perfect Coffee featuring our New!</p>
-                <p class="t2"> Different Type of perfect coffee. </p></div>
-                <button class="Order" style="width: 192px; height: 50px;border-radius: 9px; background: #7F5539; color:white;"onclick="FetchPage('product')">Order Now!</button>
-            </div>
-        </div>
 
-            <!-- ---------------------------------------------------------------------------------------------------------------- -->
+        <!-- <------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+<div class="c1">
+        <h5>Americana Coffee Beans</h5>
+            <p>$17.45</p>
+            <per>Lorem ipsum dolor sit amet et delectus <br>
+                accommodare his consul 
+                copiosae legendos at vix ad putent<br> 
+                delectus delicata usu
+                Vidit</per>
+        </div>
+        <img src="product2.png" class="rounded float-end" alt="product">
+        <div class="c3">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <footer>
@@ -65,5 +100,10 @@
         .then(data=>{document.querySelector('*').innerHTML = data;});
             }
         </script>
-</body>
-</html>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html> 

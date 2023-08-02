@@ -86,6 +86,9 @@ top:165px; */
         .alld{
             flex-direction: column;
         }
+        .Ls{
+            display: none;
+        }
         .produc66{
             width: 70vw;
             height: auto;

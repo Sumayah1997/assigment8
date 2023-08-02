@@ -11,15 +11,17 @@
 </head>
 <body background="coffee-beans-22.png"cover no-repeat;>
     <div class="topnav">
-        <img src="logo1.svg" alt="Coffee logo" style="float:left;width:65px;height:66px;margin:10px;">
+        <img class="Ls" src="logo1.svg" alt="Coffee logo" style="float:left;width:65px;height:66px;margin:10px;"onclick="FetchPage('home')">
         <h4>
-        <a href="fristpage.html" style=" margin:1px; width:200px;font-size: 18px;">HOME</a>
-        <a href="allproduct11.html" style=" margin:1px; width:200px;font-size: 18px;">SHOP</a>
+        <a onclick="FetchPage('home')" style=" margin:1px; width:200px;font-size: 18px;">HOME</a>
+        <a onclick="FetchPage('product')" style=" margin:1px; width:200px;font-size: 18px;">SHOP</a>
         <a href="#" style=" margin:1px; width:200px;font-size: 18px;">ABOUT-US</a>
-        <a href="#" style=" margin:1px; width:200px;font-size: 18px;">LOGIN/REGISTER</a></h4>
+        <a onclick="FetchPage('log')" style=" margin:1px; width:200px;font-size: 18px;">LOGIN</a>
+        <a onclick="FetchPage('reg')" style=" margin:1px; width:200px;font-size: 18px;">REGISTER</a></h4>
+        
         </div>  
-        <a href="#" style="float:right;"><img src="add-cart-1.png"style="position: absolute;right:20px;top:40px;width:35px;height:35px;">
-        <a href="seach.html" style="float:right; margin:-30px;"><img src="search-1.png"style="position: absolute;right:65px;top:40px;width:35px;height:35px;"></a>
+        <a class="Ls" href="#" style="float:right;"><img src="add-cart-1.png"style="position: absolute;right:20px;top:40px;width:35px;height:35px;">
+        <a class="Ls" href="seach.html" style="float:right; margin:-30px;"><img src="search-1.png"style="position: absolute;right:65px;top:40px;width:35px;height:35px;"onclick="FetchPage('search')"></a>
 <div class="alld">
         <div class="row">
             
@@ -68,25 +70,18 @@
                 delectus accommodarr his consul<br>
                 copiosae legendos at vix ad putent<br>
                 delectus delicta usu. Vidit</p></p>
-                <button class=" button2" style="color: white; border-radius: 10%; background-color:#7F5539; border-color: #7F5539; height: 50px; width: 100px;">Add to Cart</button>
+                <button class=" button2" style="color: white; border-radius: 10%; background-color:#7F5539; border-color: #7F5539; height: 50px; width: 100px;" onclick="FetchPage('product')">Add to Cart</button>
             
             
         </div>
     </div>
 </div>
-        <!-- <div class="img2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="46" viewBox="0 0 51 46" fill="none">
-                <path d="M25.5 3.90675C22.533 1.24624 18.6446 -0.150875 14.6628 0.0129368C10.681 0.176749 6.92052 1.88854 4.18209 4.78377C1.44366 7.67901 -0.0563061 11.5289 0.00161728 15.5136C0.0595407 19.4984 1.67078 23.3031 4.4922 26.1175L21.8963 43.519C22.8522 44.4746 24.1484 45.0114 25.5 45.0114C26.8516 45.0114 28.1478 44.4746 29.1037 43.519L46.5078 26.1175C49.3292 23.3031 50.9405 19.4984 50.9984 15.5136C51.0563 11.5289 49.5563 7.67901 46.8179 4.78377C44.0795 1.88854 40.319 0.176749 36.3372 0.0129368C32.3554 -0.150875 28.467 1.24624 25.5 3.90675ZM22.5131 8.09658L23.6982 9.27912C24.1761 9.7569 24.8242 10.0253 25.5 10.0253C26.1758 10.0253 26.8239 9.7569 27.3018 9.27912L28.4869 8.09658C29.4273 7.12293 30.5522 6.34631 31.7959 5.81204C33.0397 5.27777 34.3773 4.99655 35.7309 4.98478C37.0845 4.97302 38.4269 5.23095 39.6797 5.74353C40.9326 6.25611 42.0708 7.01306 43.0279 7.97022C43.9851 8.92739 44.7421 10.0656 45.2546 11.3184C45.7672 12.5713 46.0251 13.9136 46.0134 15.2672C46.0016 16.6208 45.7204 17.9585 45.1861 19.2022C44.6519 20.446 43.8752 21.5709 42.9016 22.5112L25.5 39.9154L8.09842 22.5112C6.24145 20.5886 5.21393 18.0135 5.23716 15.3406C5.26039 12.6677 6.3325 10.1109 8.2226 8.22076C10.1127 6.33067 12.6695 5.25855 15.3424 5.23532C18.0153 5.2121 20.5904 6.23962 22.5131 8.09658Z" fill="#7F5539"/>
-            </svg><br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="49" viewBox="0 0 43 49" fill="none">
-                <path d="M35.75 48.25C33.7708 48.25 32.0885 47.5573 30.7031 46.1719C29.3177 44.7865 28.625 43.1042 28.625 41.125C28.625 40.8479 28.6448 40.5605 28.6844 40.2629C28.724 39.9652 28.7833 39.6984 28.8625 39.4625L12.1188 29.725C11.4458 30.3188 10.6937 30.7843 9.8625 31.1215C9.03125 31.4587 8.16042 31.6266 7.25 31.625C5.27083 31.625 3.58854 30.9323 2.20312 29.5469C0.817708 28.1615 0.125 26.4792 0.125 24.5C0.125 22.5208 0.817708 20.8385 2.20312 19.4531C3.58854 18.0677 5.27083 17.375 7.25 17.375C8.16042 17.375 9.03125 17.5436 9.8625 17.8809C10.6937 18.2181 11.4458 18.6828 12.1188 19.275L28.8625 9.5375C28.7833 9.3 28.724 9.03321 28.6844 8.73712C28.6448 8.44104 28.625 8.15367 28.625 7.875C28.625 5.89583 29.3177 4.21354 30.7031 2.82812C32.0885 1.44271 33.7708 0.75 35.75 0.75C37.7292 0.75 39.4115 1.44271 40.7969 2.82812C42.1823 4.21354 42.875 5.89583 42.875 7.875C42.875 9.85417 42.1823 11.5365 40.7969 12.9219C39.4115 14.3073 37.7292 15 35.75 15C34.8396 15 33.9688 14.8322 33.1375 14.4965C32.3062 14.1608 31.5542 13.6953 30.8813 13.1L14.1375 22.8375C14.2167 23.075 14.276 23.3426 14.3156 23.6402C14.3552 23.9379 14.375 24.2245 14.375 24.5C14.375 24.7771 14.3552 25.0645 14.3156 25.3621C14.276 25.6598 14.2167 25.9266 14.1375 26.1625L30.8813 35.9C31.5542 35.3062 32.3062 34.8415 33.1375 34.5059C33.9688 34.1702 34.8396 34.0016 35.75 34C37.7292 34 39.4115 34.6927 40.7969 36.0781C42.1823 37.4635 42.875 39.1458 42.875 41.125C42.875 43.1042 42.1823 44.7865 40.7969 46.1719C39.4115 47.5573 37.7292 48.25 35.75 48.25Z" fill="#7F5539"/>
-            </svg>
-        </div> -->
+        
     
         <footer>
             <div class="bigfooter">
         <div class="ffooter">
-        <a style="color: white;  text-decoration: none;" href="location.html"  class="fa1">Locations</a>
+        <a style="color: white;  text-decoration: none;" onclick="FetchPage('loctiona')" class="fa1">Locations</a>
         <a  style="color: white;  text-decoration: none;" href="#" class="fa2">Contact Us</a>
         <a style="color: white;  text-decoration: none;" href="#" class="fa3">Privacy Policy</a>
         <a style="color: white;  text-decoration: none; font-size:13px ;" href="#" >2023@Coffee Beans international</a>
@@ -96,5 +91,14 @@
         </div> 
         </div>
         </footer>
+        <script>
+            function FetchPage(page)
+        { fetch(`/${page}`)
+        .then(response=>response.text())
+        .then(data=>{document.querySelector('*').innerHTML = data;});
+            }
+        </script>
+
+
         </body>
         </html>

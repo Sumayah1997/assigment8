@@ -11,15 +11,16 @@
 </head>
 <body background="coffee-beans-22.png"cover no-repeat;>
     <div class="topnav">
-        <img src="logo1.svg" alt="Coffee logo" style="float:left;width:65px;height:66px;margin:10px;">
+        <img class="Ls" src="logo1.svg" alt="Coffee logo" style="float:left;width:65px;height:66px;margin:10px;"onclick="FetchPage('home')">
         <h4>
-        <a href="fristpage.html" style=" margin:1px; width:200px;font-size: 18px;">HOME</a>
-        <a href="allproduct11.html" style=" margin:1px; width:200px;font-size: 18px;">SHOP</a>
+        <a onclick="FetchPage('home')" style=" margin:1px; width:200px;font-size: 18px;">HOME</a>
+        <a onclick="FetchPage('product')" style=" margin:1px; width:200px;font-size: 18px;">SHOP</a>
         <a href="#" style=" margin:1px; width:200px;font-size: 18px;">ABOUT-US</a>
-        <a href="#" style=" margin:1px; width:200px;font-size: 18px;">LOGIN/REGISTER</a></h4>
+        <a onclick="FetchPage('log')" style=" margin:1px; width:200px;font-size: 18px;">LOGIN</a>
+        <a onclick="FetchPage('reg')" style=" margin:1px; width:200px;font-size: 18px;">REGISTER</a></h4>
         </div>  
-        <a href="#" style="float:right;"><img src="add-cart-1.png" alt="Coffee logo" style="position: absolute;right:20px;top:40px;width:35px;height:35px;">
-        <a href="seach.html" style="float:right; margin:-30px;"><img src="search-1.png"style="position: absolute;right:65px;top:40px;width:35px;height:35px;"></a>
+        <a class="Ls" href="#" style="float:right;"><img src="add-cart-1.png" alt="Coffee logo" style="position: absolute;right:20px;top:40px;width:35px;height:35px;">
+        <a class="Ls" href="seach.html" style="float:right; margin:-30px;"><img src="search-1.png"style="position: absolute;right:65px;top:40px;width:35px;height:35px;"onclick="FetchPage('search')"></a>
     
         <div class="parimglink">
             <div class="contentlocation2">
@@ -46,7 +47,7 @@
         <footer>
             <div class="bigfooter">
         <div class="ffooter">
-        <a style="color: white; text-decoration: none; font-size: 13px;" href="location.html" >Locations</a>
+        <a style="color: white; text-decoration: none; font-size: 13px;" onclick="FetchPage('loctiona')" >Locations</a>
         <a style="color: white; text-decoration: none; font-size: 13px;" href="#" >Contact Us</a>
         <a style="color: white; text-decoration: none; font-size: 12px;" href="#" >Privacy Policy</a>
         <a style="color: white;  text-decoration: none; font-size: 12px;" href="#" >2023@Coffee Beans international</a>
@@ -56,5 +57,12 @@
         </div> 
         </div>
         </footer>
+        <script>
+            function FetchPage(page)
+        { fetch(`/${page}`)
+        .then(response=>response.text())
+        .then(data=>{document.querySelector('*').innerHTML = data;});
+            }
+        </script>
 </body>
 </html>
